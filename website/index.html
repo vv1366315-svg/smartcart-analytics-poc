@@ -1,0 +1,92 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>SmartCart | Everyday tech, made simple</title>
+  <link rel="stylesheet" href="styles.css">
+  <!-- GTM: Replace GTM-XXXXXXX with your actual container ID.
+       Keep this placeholder until you create your own GTM container. -->
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    window.dataLayer.push({event: "smartcart_demo_loaded"});
+  </script>
+  <!-- Google Tag Manager -->
+  <script>
+    (function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+    new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+    'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+    })(window,document,'script','dataLayer','GTM-XXXXXXX');
+  </script>
+  <!-- End Google Tag Manager -->
+</head>
+<body>
+  <!-- Google Tag Manager (noscript) -->
+  <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-XXXXXXX"
+  height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+  <!-- End Google Tag Manager (noscript) -->
+
+  <header class="topbar">
+    <a class="brand" href="index.html" aria-label="SmartCart home">Smart<span>Cart</span></a>
+    <nav><a href="#products">Products</a><button id="view-cart-button" class="cart-pill">Cart <span id="cart-count">0</span></button></nav>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="hero-copy">
+        <p class="eyebrow">SMART PICKS. SIMPLE SHOPPING.</p>
+        <h1>Little upgrades.<br><span>Better everyday.</span></h1>
+        <p>Discover practical tech essentials selected for work, travel and downtime.</p>
+        <a class="button primary" href="#products" id="shop-now">Explore products</a>
+      </div>
+      <div class="hero-card" aria-label="Featured headphones illustration">
+        <div class="orb"></div><div class="headphone">♫</div>
+        <p>Sound that moves with you</p><strong>From ₹799</strong>
+      </div>
+    </section>
+
+    <section class="section-heading" id="products">
+      <div><p class="eyebrow">THE COLLECTION</p><h2>Popular picks</h2></div>
+      <p>Demo products · INR</p>
+    </section>
+
+    <section class="product-grid" id="product-grid">
+      <article class="product-card" data-id="P101" data-name="Wireless Headphones" data-price="799">
+        <div class="product-art art-purple"><span>♫</span></div>
+        <div class="product-info"><p class="category">AUDIO</p><h3>Wireless Headphones</h3><p class="description">Comfortable sound for your everyday playlist.</p>
+          <div class="product-bottom"><strong>₹799</strong><button class="button add-button">Add to cart</button></div>
+        </div>
+      </article>
+      <article class="product-card" data-id="P102" data-name="Smart Watch" data-price="1499">
+        <div class="product-art art-green"><span>◷</span></div>
+        <div class="product-info"><p class="category">WEARABLES</p><h3>Smart Watch</h3><p class="description">Keep your day, steps and reminders in view.</p>
+          <div class="product-bottom"><strong>₹1,499</strong><button class="button add-button">Add to cart</button></div>
+        </div>
+      </article>
+      <article class="product-card" data-id="P103" data-name="Portable Speaker" data-price="999">
+        <div class="product-art art-orange"><span>◖))</span></div>
+        <div class="product-info"><p class="category">AUDIO</p><h3>Portable Speaker</h3><p class="description">Compact sound for your room or weekend away.</p>
+          <div class="product-bottom"><strong>₹999</strong><button class="button add-button">Add to cart</button></div>
+        </div>
+      </article>
+    </section>
+
+    <section class="cart-panel" id="cart-panel" hidden>
+      <div class="section-heading"><div><p class="eyebrow">YOUR SELECTION</p><h2>Your cart</h2></div><button class="text-button" id="close-cart">Continue shopping ×</button></div>
+      <div id="cart-items" class="cart-items"><p>Your cart is empty.</p></div>
+      <div class="cart-footer"><strong id="cart-total">Total: ₹0</strong><button class="button primary" id="checkout-button">Proceed to checkout</button></div>
+    </section>
+
+    <section class="confirmation" id="confirmation" hidden>
+      <div class="checkmark">✓</div><p class="eyebrow">DEMO ORDER</p><h2>Thanks for trying SmartCart!</h2>
+      <p>Your simulated order is complete. No payment was collected.</p>
+      <button class="button primary" id="continue-button">Continue shopping</button>
+    </section>
+  </main>
+
+  <footer><span class="brand">Smart<span>Cart</span></span><p>Analytics demonstration project · No real transactions</p></footer>
+  <div id="toast" role="status" class="toast" aria-live="polite"></div>
+  <script src="app.js"></script>
+</body>
+</html>
